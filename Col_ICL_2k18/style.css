@@ -1,0 +1,36 @@
+.bnnr{
+background:url(images/banner.jpg) no-repeat center 50px; 
+height:500px;
+background-size:100% 80%; 
+background-attachment:fixed;
+background-color:rgba(254,133,0,1);
+}
+.f{
+color:rgba(20,35,119,1);
+font-size:6rem; 
+}
+.cnt{
+float:right; 
+color:#fff;
+text-align:center;
+font-weight:bold;  
+font-family:Arial Black;
+padding:30% 0% 13% 50%; 
+}
+.cnt h1 ,.cnt h2{
+font-size:3.5rem;  
+}
+.pd
+{
+	margin-top:1%; 
+}
+#D1,#D2,#D3,#D4,#D5,#D6,#D7,#D8,#D9{
+	position:relative;
+	top:-50px; 
+}
+@media only screen and (min-width:600px) {
+	.cnt{ 
+	padding:13% 5% 13% 50%;  
+	}
+	
+}
