@@ -1,0 +1,2 @@
+INSERT INTO players(mbno,name,photoname,type,year,achvmnts,skills) VALUES ('8954382491','Gaurav Bhatt','gauravbhatt_8954382491','Batsman','3','last utu player','nil');
+INSERT INTO managers(mbno,name, teamname, year) VALUES ('8954283491','VIshal singh parajapati','Royal Strikers','4');

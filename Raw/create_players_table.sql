@@ -1,0 +1,1 @@
+CREATE TABLE players(mbno NUMERIC(11) PRIMARY KEY,name VARCHAR(100) NOT NULL, photoname VARCHAR(100) NOT NULL,type enum('Batsman','Bowler','All_Rounder','Wicket_Keeper'), year enum('1','2','3','4'), achvmnts VARCHAR(500),skills VARCHAR(500));
