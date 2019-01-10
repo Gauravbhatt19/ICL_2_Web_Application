@@ -2,6 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ICL-2</title>
+	<link rel="icon" href="./logo.png" type='image/png' />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<style type="text/css">
@@ -37,8 +38,13 @@
       <li class="nav-item active ">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link smooth" href="#rw1">About League</a>
+      
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">League</a>
+        <div class="dropdown-menu bg-dark text-center" aria-labelledby="navbarDropdown11">
+          <a class="dropdown-item text-white bg-dark smooth" href="##rw1">About League</a>
+          <a class="dropdown-item text-white bg-dark smooth" href="./rulebook.pdf"  target='blank' download>Rule Book</a>
+      </div>
       </li>
       <li class="nav-item">
         <a class="nav-link smooth" href="#nu1" >News Updates</a>
@@ -119,14 +125,18 @@
 <div class="jumbotron jumbotron-fluid col-md mb-0">
   <div class="container pl-5 pr-5">
     <h1 class="display-5 text-center">About League</h1>
-    <p class="lead text-justify">A Cricket League is being organised by the Hydro Cricket Club. This League is being organised for purpose of amusement as well as for providing a platform to upcoming players to showcase their skills in the field of Cricket. The tournament shall be held at the college cricket ground from 17th of Feb'19. All the matches shall be played with Cricket Tennis Ball.It is planned to register 114+ players and auction will decide final 10 teams.</p>
+    <p class="lead text-justify">A Cricket League is being organised by the Hydro Cricket Club. This League is being organised for purpose of amusement as well as for providing a platform to upcoming players to showcase their skills in the field of Cricket. The tournament shall be held at the college cricket ground from 22nd of Feb'19. All the matches shall be played with Cricket Tennis Ball.It is planned to register 130+ players and auction will decide final 10 teams.</p>
   </div>
 </div>
 <div class="card text-white bg-dark pt-5 col-md pb-5" id='nu1'>
   <div class="card-header"><h5 class="card-title text-center">News and Updates</h5></div>
   <div class="list-group">
-  <button class="list-group-item d-flex justify-content-between align-items-center  text-white bg-secondary list-group-item-action">Auctions will be announced soon.
+  <button class="list-group-item d-flex justify-content-between align-items-center  text-white bg-secondary list-group-item-action text-justify">Auctions will be on 16-17th of feb'19.
     <span class="badge badge-primary badge-pill">new</span>
+  </button>
+     <button class="list-group-item d-flex justify-content-between align-items-center  text-white bg-secondary list-group-item-action text-justify">The Second season of the IHET Cricket League (ICL)  will kick start on 22nd feb'19.   <span class="badge badge-primary badge-pill">new</span>
+  </button> <button class="list-group-item d-flex justify-content-between align-items-center list-group-item-action bg-secondary  text-justify"><a  href="./rulebook.pdf"  target='blank' download class=" text-white ">Download rulebook.</a>   <span class="badge badge-primary badge-pill">new</span>
+  </button> <button class="list-group-item d-flex justify-content-between align-items-center list-group-item-action bg-secondary  text-justify"><a  href="https://docs.google.com/forms/d/e/1FAIpQLSchgj6mpO36ewsJRPH4Wpi1AcsEyUs1wJ167M4_nkaN6-ErXA/viewform?vc=0&c=0&w=1" target="blank"  class="text-white">Want to become Volunteer ?</a>   <span class="badge badge-primary badge-pill">new</span>
   </button>
 </div>
 </div>
@@ -136,7 +146,7 @@
 	<div class="row">
 		<div class="col-md mt-2 ml-3 mr-3">
 			 <div class="card" id="rp1"><div class="card-header bg-dark text-center text-white">Players Registration</div>
-		<form class="needs-validation p-3" novalidate>
+		<form class="needs-validation p-3" novalidate action='./php_set/insertp.php' method="POST">
   <div class="form-row">
     <div class="col-xl-4 mb-3">
       <label for="validationCustom01">Full name</label>
@@ -227,7 +237,7 @@
 
 	<div class="col-md mt-2 ml-3 mr-3">
 			 <div class="card" id='rm1'><div class="card-header bg-dark text-center text-white">Managers Registration</div>
-		<form class="needs-validation p-3" novalidate>
+		<form class="needs-validation p-3" novalidate action='./php_set/insertm.php' method="POST">
   <div class="form-row">
     <div class="col-xl-6 mb-3">
       <label for="validationCustom01b">Full name</label>
@@ -307,6 +317,7 @@
  <a href="#" class="list-group-item list-group-item-action">Ankit Bhatt</a>
  <a href="#" class="list-group-item list-group-item-action">Abhay Jha</a>
  <a href="#" class="list-group-item list-group-item-action">Sanjay Basera</a>
+ <a href="#" class="list-group-item list-group-item-action">Himanshu Yadav</a>
 </div>
 </div>
 <div class="container mb-4" id='cu1'>
