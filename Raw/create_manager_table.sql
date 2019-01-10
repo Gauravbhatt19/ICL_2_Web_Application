@@ -1,1 +1,1 @@
-CREATE TABLE managers(mbno NUMERIC(11) PRIMARY KEY,name VARCHAR(100) NOT NULL, teamname VARCHAR(100) NOT NULL, year enum('1','2','3','4'));
+CREATE TABLE managers(mbno NUMERIC(11) PRIMARY KEY,name VARCHAR(100) NOT NULL, teamname VARCHAR(100) NOT NULL, year enum('1','2','3','4'),include_player int DEFAULT 0,insrt_time DATETIME DEFAULT CURRENT_TIMESTAMP);

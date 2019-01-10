@@ -146,11 +146,11 @@
 	<div class="row">
 		<div class="col-md mt-2 ml-3 mr-3">
 			 <div class="card" id="rp1"><div class="card-header bg-dark text-center text-white">Players Registration</div>
-		<form class="needs-validation p-3" novalidate action='./php_set/insertp.php' method="POST">
+		<form class="needs-validation p-3" novalidate action='./php_set/insertp.php' method="POST" enctype="multipart/form-data" >
   <div class="form-row">
     <div class="col-xl-4 mb-3">
       <label for="validationCustom01">Full name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" required>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" required name='fn'>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -161,7 +161,7 @@
     <div class="col-xl-4 mb-3">
     	<label for="customFile">Profile Photo</label>
     <div class="custom-file">
-  <input type="file" class="custom-file-input" id="customFile">
+  <input type="file" class="custom-file-input" id="customFile" name="fil" accept="image/*">
   <label class="custom-file-label" for="customFile">Profile Photo</label>
   </div>
   </div>
@@ -171,7 +171,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend">+91</span>
         </div>
-        <input type="number" class="form-control" id="validationCustomUsername" placeholder="Mobile No" aria-describedby="inputGroupPrepend" required>
+        <input type="number" class="form-control" id="validationCustomUsername" placeholder="Mobile No" aria-describedby="inputGroupPrepend" required name='mbno'>
         <div class="invalid-feedback">
           Please provide valid no.
         </div>
@@ -184,15 +184,15 @@
   <div class="form-row">
     <div class="col-xl-3 mb-3">
       <label for="validationCustom03">Type (Category)</label>
-      <select class="custom-select my-1 mr-sm-2" id="validationCustom03">
-    <option value="1" selected>Batsman</option>
-    <option value="2">Bowler</option>
-    <option value="3">All-Rounder</option>
-    <option value="3">Wicket Keeper</option>
+      <select class="custom-select my-1 mr-sm-2" id="validationCustom03" name="typ">
+    <option value="Batsman" selected>Batsman</option>
+    <option value="Bowler">Bowler</option>
+    <option value="All_Rounder">All-Rounder</option>
+    <option value="Wicket_Keeper">Wicket Keeper</option>
   </select>
     </div>    <div class="col-xl-3 mb-3">
       <label for="validationCustom044">Year</label>
-      <select class="custom-select my-1 mr-sm-2" id="validationCustom044">
+      <select class="custom-select my-1 mr-sm-2" id="validationCustom044" name="yr">
     <option value="4" selected>Forth</option>
     <option value="3">Third</option>
     <option value="2">Second</option>
@@ -201,14 +201,14 @@
     </div>
     <div class="col-xl-3 mb-3">
       <label for="validationCustom04">Achievements</label>
-      <textarea class="form-control" id="validationCustom04" required></textarea>
+      <textarea class="form-control" id="validationCustom04" required name="achvemnt"></textarea>
       <div class="invalid-feedback">
         Please provide a nil, if yet to be achieve in cricket.
       </div>
     </div>
     <div class="col-xl-3 mb-3">
       <label for="validationCustom05">Skills</label>
-      <textarea class="form-control" id="validationCustom05" required></textarea>
+      <textarea class="form-control" id="validationCustom05" required name="skill"></textarea>
       <div class="invalid-feedback">
         Please provide a nil, if not have any cricketing skills.
        </div>
@@ -241,7 +241,7 @@
   <div class="form-row">
     <div class="col-xl-6 mb-3">
       <label for="validationCustom01b">Full name</label>
-      <input type="text" class="form-control" id="validationCustom01b" placeholder="Full name" required>
+      <input type="text" class="form-control" id="validationCustom01b" placeholder="Full name" required name="fnm">
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -255,7 +255,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend">+91</span>
         </div>
-        <input type="number" class="form-control" id="validationCustomUsernameb" placeholder="Mobile No" aria-describedby="inputGroupPrepend" required>
+        <input type="number" class="form-control" id="validationCustomUsernameb" name="mbnom" placeholder="Mobile No" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Please provide valid no.
         </div>
@@ -268,7 +268,7 @@
 <div class="form-row">
     <div class="col-xl-6 mb-3">
       <label for="validationCustom044b">Year</label>
-      <select class="custom-select my-1 mr-sm-2" id="validationCustom044b">
+      <select class="custom-select my-1 mr-sm-2" id="validationCustom044b" name="yrm">
     <option value="4" selected>Forth</option>
     <option value="3">Third</option>
     <option value="2">Second</option>
@@ -277,7 +277,7 @@
     </div>
         <div class="col-xl-6 mb-3">
       <label for="validationCustom05b">Team Name</label>
-      <input type="text" class="form-control" id="validationCustom05b" placeholder="Team Name" required>
+      <input type="text" class="form-control" id="validationCustom05b" placeholder="Team Name" required name="tnm">
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -288,7 +288,7 @@
   </div>
   <div class="form-group">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" id='chg'>
+      <input class="form-check-input" type="checkbox" id='chg' name="plyrm">
       <label class="form-check-label" for="chg">
        Want to include myself as player.
       </label>
